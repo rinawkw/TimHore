@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// RESTful resource
+Route::resource ('counter_transaksi', 'CounterTransaksiController');
+Route::resource ('fasilitas', 'FasilitasController');
+Route::resource ('kamar', 'KamarController');
+Route::resource ('komplain', 'KomplainController');
+Route::resource ('log_transaksi', 'LogTransaksiController');
+Route::resource ('petugas', 'PetugasController');
+Route::resource ('penginap', 'PenginapController');
+Route::resource ('transaksi', 'TransaksiController');
+Route::resource ('wisma', 'WismaController');
+Route::resource ('kamar_dipesan', 'KamarDipesanController');
+Route::resource ('fasilitas_kamar', 'FasilitasKamarController');
+Route::resource ('tipe_kamar', 'TipeKamarController');
